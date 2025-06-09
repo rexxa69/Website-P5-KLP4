@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Tech - Renewable Energy Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Solar Tech</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Toggle Button -->
+    <div class="toggle-container">
+        <button class="toggle-btn" onclick="toggleText()">Lihat Info</button>
+    </div>
+
+    <!-- Hidden Text -->
+    <div class="hidden-text" id="hiddenText">
+        <h3 style="color: #e74c3c; margin-top: 0;">Detail Proyek</h3>
+        <p><strong>Inovasi:</strong> Solusi energi berkelanjutan yang menggabungkan teknologi surya dengan penyimpanan daya portabel.</p>
+        <p><strong>Fitur:</strong> Panel surya dengan efisiensi tinggi, pengisian daya cepat, desain tahan cuaca.</p>
+        <p><strong>Tujuan:</strong> Memanfaatkan energi terbarukan dan mengurangi limbah elektronik melalui powerbank tenaga surya dari baterai bekas.</p>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="section-content">
+            <h1 class="fade-in">Solarcell Powerbank</h1>
+            <p class="slide-left subtitle">Rekayasa dan Teknologi</p>
+            <div style="margin-top: 100px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" style="background: #f5f5f7;">
+        <div class="section-content">
+            <h2 class="fade-in">Tentang Teknologi Solar Kami</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Kami hadir untuk mengubah cara pandang terhadap limbah elektronik (baterai bekas). Melalui teknoogi solar yang inovatif, kami mentransformasi baterai bekas menjadi powerbank
+                ramah lingkungan yang memberikan energi bersih dan berkelanjutan untuk semua.
+            </p>
+            
+            <div class="product-grid">
+                <div class="product-card card-dark">
+                    <h3 style="color: #f5f5f7;">Inovasi Solar</h3>
+                    <p style="color: #a1a1a6;">Memanfaatkan kekuatan matahari untuk energi tak terbatas di mana saja.</p>
+                </div>
+                
+                <div class="product-card card-blue">
+                    <h3 style="color: white;">Daya Portabel</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Tidak pernah kehabisan baterai lagi dengan teknologi penggantian tenaga surya yang canggih.</p>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Pocket-Friendly</h3>
+                    <p style="color: #86868b;">Teknologi daur ulang dalam desain compact. Portabel, stylish, dan dilengkapi 
+                        panel solar efisien untuk daya berkelanjutan .</p>
+                </div>
+                
+                <div class="product-card card-green">
+                    <h3 style="color: white;">Ramah Lingkungan</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Menggabungkan anel surya dan baterai bekas untuk mengurangi jejak karbon serta limbah elektronik, mendukung gaya hidup berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="section-content">
+            <h2 class="fade-in">Solarcell Powerbank Kami</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Jelajahi rangkaian perangkat bertenaga surya kami dan lihat bagaimana perangkat tersebut membantu melindungi lingkungan dari limbah baterai.</p>
+            
+            <div class="product-carousel">
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="carousel-slide">
+                        <img src="cpu.jpg" alt="" />
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="batterycpu.jpg" alt="" />
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="panelsurya.jpg" alt="" />
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="finalproduct.jpg" alt="" />
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="hasilpowerbank" alt="" />
+                    </div>
+                </div>
+                <button class="carousel-nav prev" onclick="changeSlide(-1)">‹</button>
+                <button class="carousel-nav next" onclick="changeSlide(1)">›</button>
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(3)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+    <div class="section-content">
+        <h2 class="fade-in">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="razzan.jpg">
+                <h4>Razzan</h4>
+                <p>Kepala Operasional</p>
+            </div>
+            <div class="team-card">
+                <img src="ataa.jpg" alt=>
+                <h4>Ataa</h4>
+                <p>Spesialis Teknis</p>
+            </div>
+            <div class="team-card">
+                <img src="kevin.jpg" alt="">
+                <h4>Kevin</h4>
+                <p>Support Generalis</p>
+            </div>
+            <div class="team-card">
+                <img src="nevlin.jpg" alt="">
+                <h4>Nevlin</h4>
+                <p>Spesialis Design</p>
+            <!-- Tambahkan anggota lain sesuai kebutuhan -->
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2 class="fade-in">Ubah Limbah Jadi Energi</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Mengubah limbah baterai menjadi energi bersih. Powerbank tenaga surya yang tidak hanya
+                mengisi daya gadget Anda, tapi juga menyelamatkan lingkungan. Wujudkan Sekarang.</p>
+            
+            <div class="contact-info">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+<path d="M 5.5 7 C 3.019531 7 1 9.019531 1 11.5 L 1 11.925781 L 25 29 L 49 11.925781 L 49 11.5 C 49 9.019531 46.980469 7 44.5 7 Z M 6.351563 9 L 43.644531 9 L 25 22 Z M 1 14.027344 L 1 38.5 C 1 40.980469 3.019531 43 5.5 43 L 44.5 43 C 46.980469 43 49 40.980469 49 38.5 L 49 14.027344 L 43 18.296875 L 43 41 L 7 41 L 7 18.296875 Z"></path>
+</svg></div>
+                    <h3>Email</h3>
+                    <p>info@solartech.com</p>
+                    <p>Hubungi kami untuk pertanyaan atau kerjasama</p>
+                </div>
+                
+                <div class="contact-card slide-left">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+</svg></div>
+                    <h3>Instagram</h3>
+                    <p>@solartechofficial</p>
+                    <p>Follow us for updates</p>
+                </div>
+                
+                <div class="contact-card slide-right">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+    <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
+</svg></div>
+                    <h3>Whatsapp</h3>
+                    <p>+62 896 857 3936</p>
+                    <p>Tanya Kami</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 40px; border-radius: 20px;">
+                <h2 class="scale-up" style="color: white;">♻️ Bukan Sekadar Powerbank…</h2>
+                <p class="fade-in" style="color: rgba(255,255,255,0.9); font-size: 24px;">Inilah saatnya kamu beralih ke energi pintar.
+Powerbank kami menggunakan baterai bekas yang diperbarui dan panel surya untuk pengisian—hemat, ramah lingkungan, dan siap pakai di mana saja.</p>
+                <p class="slide-up" style="color: white; font-size: 28px; font-weight: 600; margin-top: 40px;">🌞 Isi Tenaga dari Matahari.
+🔋 Selamatkan Bumi dengan Setiap Pengisian.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="color: #86868b; font-size: 14px; margin: 0;">Terima Kasih.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
