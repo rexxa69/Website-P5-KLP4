@@ -177,6 +177,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.product-carousel');
     carousel.addEventListener('mouseenter', stopAutoSlide);
     carousel.addEventListener('mouseleave', startAutoSlide);
+
+    const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Add dark class on mouse enter, remove on mouse leave
+    navLinks.addEventListener('mouseenter', function() {
+        navbar.classList.add('dark');
+    });
+    navLinks.addEventListener('mouseleave', function() {
+        navbar.classList.remove('dark');
+    });
 });
 
 // Navbar background change on scroll
